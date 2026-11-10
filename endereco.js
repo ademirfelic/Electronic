@@ -30,16 +30,7 @@ class Endereco {
     }
 
 }
-export
+export default Endereco;
 
-
-const endereco = new Endereco("cajupiranga","67","Parnamirim","RN")
-
-endereco.logradouro = "Rua Caminho da roca";
-endereco.uf = "RJ";
-console.log(endereco.logradouro);
-console.log(endereco.numero);
-console.log(endereco.cidade);
-console.log(endereco.uf);
 
 

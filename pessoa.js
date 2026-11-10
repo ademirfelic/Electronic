@@ -1,15 +1,17 @@
+import Endereco from "./Endereco.js";
+
 class Pessoa extends Endereco{
     #nome;
 
     constructor(logradouro,numero,cidade,uf,nome){
         super(logradouro,numero,cidade,uf);
-        this.#nome = this._validarTexto(nome);
+        this.#nome = this._validarNome(nome);
     }
 
     get nome(){return this.#nome};
     set nome(nome){this.#nome = this._validarTexto(nome)};
 
-     _validarTexto(texto){
+     _validarNome(texto){
         if(typeof texto !== "string" || texto.trim() === ""){
             throw new Error("Campo deve ser preenchido");
         }
@@ -20,7 +22,3 @@ class Pessoa extends Endereco{
     }
 
 }
-
-const pessoa = new Pessoa("rua","67","parnamirm","rn","Ademir");
-
-console.log(pessoa);
