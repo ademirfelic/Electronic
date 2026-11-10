@@ -23,7 +23,6 @@ class Endereco {
     set uf(uf){this.#uf = this._validarTexto(uf)};
 
     _validarTexto(texto){
-        texto = texto.trim();
         if(typeof texto !== "string" || texto.trim() === ""){
             throw new Error("Campo deve ser preenchido");
         }
@@ -31,6 +30,8 @@ class Endereco {
     }
 
 }
+export
+
 
 const endereco = new Endereco("cajupiranga","67","Parnamirim","RN")
 
