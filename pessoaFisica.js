@@ -28,8 +28,3 @@ class PessoaFisica extends Pessoa{
     toString(){return `${super.toString()} | CPF: ${this.#cpf}`}
 
 }
-
-const end = new Endereco('Rua','67','Parnamirim','RN');
-const ademir = new PessoaFisica("Ademir",end,'12405307731','05/07/1987');
-
-console.log(String(ademir));

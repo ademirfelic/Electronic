@@ -7,3 +7,10 @@ export function validarTamanho(valor,tamanho,rotulo){
     }
     return digitos;
 }
+
+export function validarTexto(texto){
+        if(typeof texto !== "string" || texto.trim() === ""){
+            throw new Error("Campo deve ser preenchido");
+        }
+        return texto.trim().toUpperCase();
+    }
