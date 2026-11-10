@@ -1,5 +1,5 @@
 import Pessoa from "./pessoa.js";
-import Endereco from "./endereco.js";
+
 import { validarTamanho } from "./Util.js";
 
 
@@ -28,3 +28,5 @@ class PessoaFisica extends Pessoa{
     toString(){return `${super.toString()} | CPF: ${this.#cpf}`}
 
 }
+
+export default PessoaFisica;

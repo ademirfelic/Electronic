@@ -22,3 +22,4 @@ class PessoaJuridica extends Pessoa {
 
 }
 
+export default PessoaJuridica
