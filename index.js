@@ -24,5 +24,4 @@ cadastros.forEach((cadastro)=>{
     }
 });
 
-
 clientes.forEach((cliente)=>console.log(String(cliente)));
