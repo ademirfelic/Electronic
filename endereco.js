@@ -29,6 +29,8 @@ class Endereco {
         return texto.trim().toUpperCase();
     }
 
+    toString() { return `${this.logradouro}, ${this.numero} - ${this.cidade}/${this.uf}`; }
+
 }
 export default Endereco;
 
